@@ -20,3 +20,69 @@
   font-size: 4rem;
   z-index:2;
 }
+.score{
+  display:flex;
+  width:30vw;
+  justify-content: space-evenly;
+  position:absolute;
+  top: 70px;
+  z-index:1;
+}
+
+.p-count, .c-count{
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.options{
+  display: flex;
+  width:50vw;
+  justify-content: space-evenly;
+  margin: 2rem;
+}
+.rock,.paper,.scissor{
+  padding:0.8rem;
+  width:100px;
+  border-radius: 10px;
+  background: green;
+  outline:none;
+  border-color: green;
+  border:none;
+  cursor: pointer;
+}
+.move{
+  font-size:2rem;
+  font-weight: bold;
+}
+
+.reload{
+  display: none;
+  margin: 2rem;
+  padding:1rem;
+  background: green;
+  outline: none;
+  border:none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.result{
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+/*RESPONSIVE DESIGN*/
+@media screen and (max-width:612px) {
+  .title{
+    text-align: center;
+  }
+  .score{
+    position:absolute;
+    top:200px;
+    width:100vw;
+  }
+  .options{
+    width:100vw;
+  }
+}
