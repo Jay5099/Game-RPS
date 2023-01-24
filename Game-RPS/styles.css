@@ -26,7 +26,7 @@
   justify-content: space-evenly;
   position:absolute;
   top: 70px;
-  z-index:1;
+  z-index:4;
 }
 
 .p-count, .c-count{

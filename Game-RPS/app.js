@@ -9,7 +9,7 @@ const playGame=()=>{
     const paperBtn=document.querySelector('.paper');
     const scissorBtn=document.querySelector('.scissor');
     const playerOptions=[rockBtn,paperBtn,scissorBtn];
-    const computerOptions=['rock','paper','scissors']
+    const computerOptions=['rock','paper','scissor']
 
 
 playerOptions.forEach((option)=>{
@@ -21,9 +21,11 @@ playerOptions.forEach((option)=>{
 
         const choiceNumber=Math.floor(Math.random()*3);
         const computerChoice=computerOptions[choiceNumber];
-
-
+        console.log("comp choice :"+computerOptions[choiceNumber]);
+        console.log("user choice :"+this.innerText);
+        
         winner(this.innerText,computerChoice)
+        console.log("user choice :"+this.innerText);
 
         if(moves==10){
             gameOver(playerOptions,movesLeft);
@@ -34,12 +36,16 @@ playerOptions.forEach((option)=>{
 
 /******************* DECIDE WINNER  *****************/
 
+
 const winner=(player,computer)=>{
     const result = document.querySelector('.result');
     const playerScoreBoard= document.querySelector('.p-count');
     const computerScoreBoard=documrnt.querySelector('.c-count');
     player=player.toLowerCase();
     computer= computer.toLowerCase();
+
+    console.log("player -"+player)
+    console.log("computer -"+computer)
     if(player==computer){
         result.textContent='Tie'
     }
@@ -56,7 +62,7 @@ const winner=(player,computer)=>{
             playerScoreBoard.textContent=playerScore;
             }
     } 
-    else if(player=='scissors'){
+    else if(player=='scissor'){
         if(computer=='rock'){
             result.textContent='Computer Won';
             computerScore++;
@@ -69,7 +75,7 @@ const winner=(player,computer)=>{
             }
     } 
     else if(player=='paper'){
-        if(computer=='scissors'){
+        if(computer=='scissor'){
             result.textContent='Computer Won';
             computerScore++;
             computerScoreBoard.textContent=computerScore;
