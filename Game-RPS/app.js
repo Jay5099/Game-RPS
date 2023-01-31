@@ -40,7 +40,7 @@ playerOptions.forEach((option)=>{
 const winner=(player,computer)=>{
     const result = document.querySelector('.result');
     const playerScoreBoard= document.querySelector('.p-count');
-    const computerScoreBoard=documrnt.querySelector('.c-count');
+    const computerScoreBoard=document.querySelector('.c-count');
     player=player.toLowerCase();
     computer= computer.toLowerCase();
 
@@ -99,9 +99,9 @@ const gameOver =(playerOptions,movesLeft)=>{
 
 
     chooseMove.innerText='Game Over!!';
-    movesLeft.styles.display='none';
+    movesLeft.style.display='none';
 
-    if(playerScore>compterScore){
+    if(playerScore>computerScore){
         result.style.fontSize='2rem';
         result.innerText='you won the Game';
         result.style.color='#308D46';
@@ -109,7 +109,7 @@ const gameOver =(playerOptions,movesLeft)=>{
     else if(playerScore<computerScore){
         result.style.fontSize='2rem';
         result.innerText='You Lost the game';
-        rewsult.style.color='red';
+        result.style.color='red';
     }
     else{
         result.style.fontSize='2rem';
@@ -118,7 +118,7 @@ const gameOver =(playerOptions,movesLeft)=>{
     }
     reloadBtn.innerText ='Restart';
     reloadBtn.style.display='flex';
-    returnBtn.addEventListener('click',()=>{
+    reloadBtn.addEventListener('click',()=>{
         window.location.reload();
     })
 } 
