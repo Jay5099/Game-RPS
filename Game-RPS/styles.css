@@ -2,10 +2,19 @@
   padding: 0;
   margin: 0;
   box-sizing:border-box;
-  background: #082c6c;
-  color:#fff;
-}
 
+}
+img{
+  height: 100%;
+  width: 100%;
+  /* position: relative; */
+}
+body{
+  background-image: url(./components/bg.png) ;
+  background-repeat: no-repeat;
+  background-color: rgb(192, 189, 228);
+  background-size: 100% 100%;
+}
 .game{
   display:flex;
   flex-direction:column;
@@ -74,8 +83,19 @@
 
 /*RESPONSIVE DESIGN*/
 @media screen and (max-width:612px) {
+*{
+  color: black;
+}
+  body{
+    background-image: url(./components/bg2.jpg);
+    opacity: 0.70;
+  }
+  .game{
+    background-color: antiquewhite;
+  }
   .title{
     text-align: center;
+  background-color: rgb(173, 124, 124);
   }
   .score{
     position:absolute;
@@ -84,5 +104,8 @@
   }
   .options{
     width:100vw;
+  }
+  .move{
+    padding-top:150px ;
   }
 }

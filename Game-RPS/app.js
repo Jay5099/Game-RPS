@@ -52,36 +52,36 @@ const winner=(player,computer)=>{
 
     else if(player=='rock'){
         if(computer=='paper'){
-            result.textContent='Computer Won';
+            result.textContent='Computer Won, Computer Chose Paper';
             computerScore++;
             computerScoreBoard.textContent=computerScore;
         }
         else {
-            result.textContent='Player Won'
+            result.textContent='You Won, Computer Chose Scissor'
             playerScore++;
             playerScoreBoard.textContent=playerScore;
             }
     } 
     else if(player=='scissor'){
         if(computer=='rock'){
-            result.textContent='Computer Won';
+            result.textContent='Computer Won, Computer Choosed Rock';
             computerScore++;
             computerScoreBoard.textContent=computerScore;
         }
         else {
-            result.textContent='Player Won'
+            result.textContent='You Won, Computer Chose Paper'
             playerScore++;
             playerScoreBoard.textContent=playerScore;
             }
     } 
     else if(player=='paper'){
         if(computer=='scissor'){
-            result.textContent='Computer Won';
+            result.textContent='Computer Won, Computer Choosed Scissor';
             computerScore++;
             computerScoreBoard.textContent=computerScore;
         }
         else {
-            result.textContent='Player Won'
+            result.textContent='You Won, Computer Chose Rock'
             playerScore++;
             playerScoreBoard.textContent=playerScore;
             }
