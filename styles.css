@@ -88,6 +88,7 @@ body{
 }
   body{
     background-image: url(./components/bg2.jpg);
+    opacity:0.90;
   }
   .game{
     background-color: antiquewhite;
