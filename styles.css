@@ -10,9 +10,9 @@ img{
   /* position: relative; */
 }
 body{
-  background-image: url(./components/bg.png) ;
+  /* background-image: url(./components/bg.png) ; */
   background-repeat: no-repeat;
-  background-color: rgb(192, 189, 228);
+  background-image: linear-gradient(to bottom right, orange, rgb(255, 255, 109));
   background-size: 100% 100%;
 }
 .game{
@@ -26,8 +26,12 @@ body{
 .title{
   position:absolute;
   top:0;
-  font-size: 4rem;
+  font-size: 3rem;
   z-index:2;
+  background-color: bisque;
+  padding: 1rem;
+  border-radius: 10px;
+  margin: 10px;
 }
 .score{
   display:flex;
@@ -36,6 +40,10 @@ body{
   position:absolute;
   top: 70px;
   z-index:4;
+  margin: 2rem;
+  background-color: rgb(201, 76, 76);
+  border-radius: 5px;
+  padding: 10px;
 }
 
 .p-count, .c-count{
@@ -79,6 +87,12 @@ body{
 .result{
   margin-top: 20px;
   font-size: 1.2rem;
+  background-color: chocolate;
+  padding: 20px;
+  margin: 30px;
+  border-radius: 20px;
+  text-align: center;
+  color: white;
 }
 
 /*RESPONSIVE DESIGN*/
